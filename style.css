@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 
-.container-main {
+.cmain {
   display: flex;
   gap: 20px;
   max-width: 1200px;
@@ -37,7 +37,7 @@ h1, h2 {
   text-align: center;
 }
 
-.student-info img {
+.s-info img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -46,19 +46,19 @@ h1, h2 {
 }
 
 
-.portfolio {
+.p {
   flex: 3;
 }
 
 
-.card-container {
+.c-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
 
-.card {
+.c{
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -66,31 +66,31 @@ h1, h2 {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.c:hover {
   transform: scale(1.05);
 }
 
-.card img {
+.c img {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 
-.card-info {
+.info {
   padding: 15px;
 }
 
-.card-info h3 {
+.info h3 {
   margin: 0 0 10px;
   font-size: 18px;
 }
 
-.card-info h3 a {
+.info h3 a {
   text-decoration: none;
   color: #333;
 }
 
-.card-info p {
+.info p {
   font-size: 14px;
   color: #666;
 }
@@ -103,5 +103,9 @@ footer {
   background: #222;
  color: #fff;
 }
-
+img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle; 
+}
 
