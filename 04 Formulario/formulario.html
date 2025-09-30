@@ -7,10 +7,10 @@
     <script src="./js/validacion.js"></script>
 </head>
 <body>
-    <p>Todos los formularios en la web, manejan métodos para el envío de las diferentes peticiones que realiza el usuario considerando la arquitectura cliente servidor, el manejo de las peticiones se hace por medio del protocolo http y actualmente pot https, cada petición debe ser atendida en un tiempo de respuesta conforme al modelo TCP/IP. Los métodos principales de los formularios son:
+   <aside> <p>Todos los formularios en la web, manejan métodos para el envío de las diferentes peticiones que realiza el usuario considerando la arquitectura cliente servidor, el manejo de las peticiones se hace por medio del protocolo http y actualmente pot https, cada petición debe ser atendida en un tiempo de respuesta conforme al modelo TCP/IP. Los métodos principales de los formularios son:
         <ol>
-            <li>GET: <h1>Este método se encarga de enviar la información del formulario por medio de la salida estandar (conocida como url), del navegador, esto propicia que puedan existir inyecciones de código realizando violaciones a la seguridad del sistema.</h1></li>
-            <li>POST: <h1>Este método se encarga de enviar la información para poder registrar un cambio o un nuevo registro dentro del sistema, enviandola por el metodo estandar; pero mediante un ocultamiento, esto significa que no es visible para el usuario. Lo que nos ofrece un mayor grado de seguridad en el manejo de la información.</h1></li>
+            <li>GET: <h3>Este método se encarga de enviar la información del formulario por medio de la salida estandar (conocida como url), del navegador, esto propicia que puedan existir inyecciones de código realizando violaciones a la seguridad del sistema.</h3></li>
+            <li>POST: <h3>Este método se encarga de enviar la información para poder registrar un cambio o un nuevo registro dentro del sistema, enviandola por el metodo estandar; pero mediante un ocultamiento, esto significa que no es visible para el usuario. Lo que nos ofrece un mayor grado de seguridad en el manejo de la información.</h3></li>
         </ol>
         <br>
         <p>En resumen los métodos son:
@@ -21,7 +21,7 @@
                 <li>PUT: Sirve para alamcenar la información de un recurso particular y conectarse al servicio para realizar la actualización</li>
                 <li>HEAD: Sirve para regresar el codigo de puesta a cualquier cabecera HTTP asociado a un recurso</li>
             </ul>
-        </p>
+        </p></aside>
     </p>
     <div class="container-form">
         <form method="post" id="formulario" name="formulario" onsubmit="return validar(this)" action="">
