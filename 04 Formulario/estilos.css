@@ -1,0 +1,62 @@
+body {
+  margin: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.c {
+  display: flex;     
+  gap: 20px;         
+  padding: 20px;
+}
+
+aside {
+  width: 30%;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 15px;
+  
+}
+
+.l {
+  flex: 1;           
+ font-size: xx-small;
+  padding: 15px;
+}
+.li{
+    font-size:xx-small;
+}
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.cajas{
+    width:380px;
+    height:15px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:12px;
+    color:white;}
+   
+    textarea {
+    height:150px;
+}
+ 
+.boton{
+    width:85px;
+    height:40px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
+ a{color: #fff;
+font-size:small;}
