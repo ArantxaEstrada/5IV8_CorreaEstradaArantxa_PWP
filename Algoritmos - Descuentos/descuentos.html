@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descuento de Tienda</title>
+  <link rel="stylesheet" href="./descuentos.css">
+  <script defer src="./descuentos.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section class="instrucciones">
+      <h2>Instrucciones</h2>
+      <p>Ingrese hasta <strong>15 productos</strong> seleccionándolos de la lista y escriba su precio.</p>
+      <p>Solo se permiten <strong>números positivos</strong> (enteros o decimales).</p>
+      <p>Presione <strong>“Calcular total”</strong> para conocer el total y el total con <strong>15 % de descuento</strong>.</p>
+    </section>
+
+    <section class="formulario">
+      <h1>Calculadora de Descuento</h1>
+      <form id="formCompra">
+      
+        <div class="fila">
+          <label>Producto 1</label>
+          <select name="producto1">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio1" placeholder="Precio">
+        </div>
+
+     
+        <div class="fila">
+          <label>Producto 2</label>
+          <select name="producto2">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio2" placeholder="Precio">
+        </div>
+
+        
+        <div class="fila">
+          <label>Producto 3</label>
+          <select name="producto3">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio3" placeholder="Precio">
+        </div>
+
+        <div class="fila">
+          <label>Producto 4</label>
+          <select name="producto4">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio4" placeholder="Precio">
+        </div>
+
+        
+        <div class="fila">
+          <label>Producto 5</label>
+          <select name="producto5">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio5" placeholder="Precio">
+        </div>
+
+        <div class="fila">
+          <label>Producto 6</label>
+          <select name="producto6">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio6" placeholder="Precio">
+        </div>
+
+       
+        <div class="fila">
+          <label>Producto 7</label>
+          <select name="producto7">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio7" placeholder="Precio">
+        </div>
+
+        <div class="fila">
+          <label>Producto 8</label>
+          <select name="producto8">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio8" placeholder="Precio">
+        </div>
+
+     
+        <div class="fila">
+          <label>Producto 9</label>
+          <select name="producto9">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio9" placeholder="Precio">
+        </div>
+
+       
+        <div class="fila">
+          <label>Producto 10</label>
+          <select name="producto10">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio10" placeholder="Precio">
+        </div>
+
+      
+        <div class="fila">
+          <label>Producto 11</label>
+          <select name="producto11">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio11" placeholder="Precio">
+        </div>
+
+       
+        <div class="fila">
+          <label>Producto 12</label>
+          <select name="producto12">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio12" placeholder="Precio">
+        </div>
+
+       
+        <div class="fila">
+          <label>Producto 13</label>
+          <select name="producto13">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio13" placeholder="Precio">
+        </div>
+
+       
+        <div class="fila">
+          <label>Producto 14</label>
+          <select name="producto14">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio14" placeholder="Precio">
+        </div>
+
+      
+         <div class="fila">
+          <label>Producto 15</label>
+          <select name="producto15">
+            <option value="Detergente">Detergente</option>
+            <option value="Queso">Queso</option>
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Mantequilla">Mantequilla</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Jabón">Jabón</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Sal">Sal</option>
+            <option value="Yogur">Yogur</option>
+            <option value="Café">Café</option>
+            <option value="Refresco">Refresco</option>
+          </select>
+          <input type="text" name="precio15" placeholder="Precio">
+        </div>
+
+        <button type="button" id="btnCalcular">Calcular total</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
