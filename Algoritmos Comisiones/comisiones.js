@@ -1,40 +1,25 @@
-function calcularTotal() {
-    s
-    const primerMes = document.getElementById("mes1").value.trim();
-    const segundoMes = document.getElementById("mes2").value.trim();
-    const tercerMes = document.getElementById("mes3").value.trim();
-    const cajaResultado = document.getElementById("resultado");
+function sumarTodo() {
+    const primero = mes1.value.trim();
+    const segundo = mes2.value.trim();
+    const tercero = mes3.value.trim();
 
-   
-    const soloNumeros = /^[0-9]{1,12}(\.[0-9]+)?$/;
+    const reglaNumero = /^\d{1,12}(\.\d+)?$/;
 
-    if (!soloNumeros.test(primerMes)) {
-        alert(" El sueldo del Mes 1 debe ser un número válido con máximo 12 dígitos.");
-        return;
-    }
-    if (!soloNumeros.test(segundoMes)) {
-        alert(" El sueldo del Mes 2 debe ser un número válido con máximo 12 dígitos.");
-        return;
-    }
-    if (!soloNumeros.test(tercerMes)) {
-        alert(" El sueldo del Mes 3 debe ser un número válido con máximo 12 dígitos.");
+    if (!primero || !segundo || !tercero) {
+        alert("Debes llenar los tres sueldos.");
         return;
     }
 
-    const mes1 = parseFloat(primerMes);
-    const mes2 = parseFloat(segundoMes);
-    const mes3 = parseFloat(tercerMes);
+    if (!reglaNumero.test(primero) || !reglaNumero.test(segundo) || !reglaNumero.test(tercero)) {
+        alert("Solo se permiten números con decimales y máximo 12 dígitos.");
+        return;
+    }
 
+    const sueldoUno = parseFloat(primero);
+    const sueldoDos = parseFloat(segundo);
+    const sueldoTres = parseFloat(tercero);
 
-    const comision1 = mes1 * 0.10;
-    const comision2 = mes2 * 0.10;
-    const comision3 = mes3 * 0.10;
+    const total = (sueldoUno * 1.10) + (sueldoDos * 1.10) + (sueldoTres * 1.10);
 
-    const totalComisiones = comision1 + comision2 + comision3;
-    const totalFinal = mes1 + mes2 + mes3 + totalComisiones;
-
-    cajaResultado.innerHTML = `
-         Total de comisiones: $${totalComisiones.toFixed(2)}<br>
-         Total general (sueldos + comisiones): $${totalFinal.toFixed(2)}
-    `;
+    alert(` El total con comisiones es: $${total.toFixed(2)}`);
 }

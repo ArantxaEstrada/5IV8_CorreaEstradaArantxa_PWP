@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Comisiones del Vendedor</title>
-    <link rel="stylesheet" href="./comisiones.css">
-    <script defer src="./comisiones.js"></script>
+    <title>Sueldo con Comisiones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
 </head>
 <body>
     <div class="contenedor">
-        <h1>Cálculo de Sueldo y Comisiones</h1>
-        <form id="formulario">
+        <h1>Calculadora de Sueldo con Comisiones</h1>
+        <form>
             <label for="mes1">Sueldo del Mes 1:</label>
-            <input type="text" id="mes1" placeholder="Ej: 10000.50">
+            <input type="text" id="mes1" >
 
             <label for="mes2">Sueldo del Mes 2:</label>
-            <input type="text" id="mes2" placeholder="Ej: 12000.75">
+            <input type="text" id="mes2" >
 
             <label for="mes3">Sueldo del Mes 3:</label>
-            <input type="text" id="mes3" placeholder="Ej: 9500.25">
+            <input type="text" id="mes3" >
 
-            <button type="button" onclick="calcularTotal()">Calcular Total</button>
+            <input type="button" value="Calcular Total" onclick="sumarTodo()">
         </form>
-
-        <div id="resultado"></div>
     </div>
-     <br>
-     <br>
-     <br>
-  <footer class="footer">
+
+     <footer class="footer">
     <p>Arantxa Correa Estrada 5iv8</p>
      <a href="../index.html">Regresamos al menu principal</a>
   </footer>
+
 </body>
 </html>
+
+
