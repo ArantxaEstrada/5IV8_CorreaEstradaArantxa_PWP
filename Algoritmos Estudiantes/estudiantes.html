@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Porcentaje de hombres/mujeres</title>
+    <link rel="stylesheet" href="./estudiantes.css">
+    <script defer src="./estudiantes.js"></script>
+</head>
+<body>
+    <h1>Porcentaje de Hombres y Mujeres</h1>
+    <form id="formPorcentaje">
+        <div class="section">
+            <label for="hombres">Cantidad de hombres:</label>
+            <input type="number" id="hombres" name="hombres" min="1" required>
+            <label for="mujeres">Cantidad de mujeres:</label>
+            <input type="number" id="mujeres" name="mujeres" min="1" required>
+            <button type="submit">Calcular</button>
+        </div>
+    </form>
+    <div id="resultado" class="section" style="display:none;">
+        <h2>Resultados</h2>
+        <div class="barra-container">
+            <span>Hombres</span>
+            <div class="barra">
+                <div id="barraHombres" class="barra-hombres"></div>
+            </div>
+            <span id="porcentajeHombres"></span>
+        </div>
+        <div class="barra-container">
+            <span>Mujeres</span>
+            <div class="barra">
+                <div id="barraMujeres" class="barra-mujeres"></div>
+            </div>
+            <span id="porcentajeMujeres"></span>
+        </div>
+    </div>
+    
+</body>
+</html>

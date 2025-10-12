@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAF4FC;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.instrucciones {
+    width: 30%;
+    background-color: #666;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.instrucciones h2 {
+    color: #fff;
+}
+
+.formulario {
+    width: 65%;
+    background-color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333 ;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+td {
+    padding: 8px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid ;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+select, input {
+  width: 35%;
+  padding: 6px;
+  border: 1px solid ;
+  border-radius: 8px;
+  outline: none;
+}
+
+

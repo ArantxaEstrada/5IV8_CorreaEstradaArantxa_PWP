@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 1; i <= 15; i++) {
       const precioInput = form[`precio${i}`].value.trim();
 
-      // Si está vacío, se ignora ese producto
+      
       if (precioInput === "") continue;
 
-      // Validar si es número positivo (enteros o decimales)
       if (!/^\d+(\.\d+)?$/.test(precioInput)) {
         alert(` Error en el producto ${i}: solo se permiten números positivos (enteros o decimales).`);
         return;
