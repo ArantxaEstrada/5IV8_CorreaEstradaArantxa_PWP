@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Gatos</title>
+    <link rel="stylesheet" href="./gato.css">
+</head>
+<body>
+    <header>
+        <h1>Buscador de Gatos </h1>
+        <p>Escribe una palabra como "happy", "sleepy" o "cute" para ver un gato </p>
+    </header>
+
+    <main>
+        <section class="buscador">
+            <input 
+                type="text" 
+                id="textoGato" 
+                placeholder="Escribe algo... (o deja vacío para un gato aleatorio)">
+            <button id="buscarBtn">Buscar gato</button>
+        </section>
+
+        <section class="resultado">
+            <div id="contenedorGato">
+               
+            </div>
+        </section>
+
+        <button id="volverBtn" class="oculto">Volver a buscar</button>
+    </main>
+
+    <footer>
+        <p><a href="https://cataas.com/?ref=public_apis&utm_medium=website">API</a></p>
+        <p><a href="./index.html">Regresamos al menú principal</a></p>
+    </footer>
+
+    <script src="./gato.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Problemas 2</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+</head>
+<body>
+    <div class="problema">
+        <h2>1. Operaciones con dos números</h2>
+        <input type="number" id="num1" placeholder="Primer número">
+        <input type="number" id="num2" placeholder="Segundo número">
+        <button onclick="calcularOperacion()">Calcular</button>
+        <div id="resultadoOp" class="resultado"></div>
+    </div>
+
+    <div class="problema">
+        <h2>2. Mayor de tres números</h2>
+        <input type="number" id="n1" placeholder="Primer número">
+        <input type="number" id="n2" placeholder="Segundo número">
+        <input type="number" id="n3" placeholder="Tercer número">
+        <button onclick="encontrarMayor()">Encontrar Mayor</button>
+        <div id="resultadoMayor" class="resultado"></div>
+    </div>
+
+    <div class="problema">
+        <h2>3. Cálculo de Horas Extra</h2>
+        <input type="number" id="horasTrabajadas" placeholder="Horas trabajadas">
+        <input type="number" id="pagoPorHora" placeholder="Pago por hora normal">
+        <button onclick="calcularHorasExtra()">Calcular Pago</button>
+        <div id="resultadoHoras" class="resultado"></div>
+    </div>
+
+    <div class="problema">
+        <h2>4. Cálculo de Utilidades</h2>
+        <input type="number" id="salarioMensual" placeholder="Salario mensual">
+        <select id="antiguedad">
+            <option value="0">Menos de 1 año</option>
+            <option value="1">1 a 2 años</option>
+            <option value="2">2 a 5 años</option>
+            <option value="5">5 a 10 años</option>
+            <option value="10">Más de 10 años</option>
+        </select>
+        <button onclick="calcularUtilidades()">Calcular Utilidades</button>
+        <div id="resultadoUtilidades" class="resultado"></div>
+    </div>
+</body>
+</html>

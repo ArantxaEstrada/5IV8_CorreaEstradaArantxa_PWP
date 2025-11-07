@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f7f1;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+
+.problema {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problema:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+.problema h2 {
+    color: #1b5e20;
+    margin-bottom: 1.5rem;
+}
+
+
+input[type="number"],
+select {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #1b5e20;
+    box-shadow: 0 0 6px rgba(27, 94, 32, 0.3);
+}
+
+
+button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #1b5e20;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+
+.resultado {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 600px) {
+    .problema {
+        padding: 1.5rem;
+    }
+
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+}
