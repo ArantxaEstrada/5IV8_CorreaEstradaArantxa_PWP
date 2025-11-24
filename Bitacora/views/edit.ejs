@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición de Registro de Bitácora</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Actualización de Registro de Bitácora</h1>
+    <form action="/bitacora/update/<%= bitacora.id %>" method="POST">
+        <label for="fecha_hora_ronda">Fecha y Hora de la Ronda: </label>
+        <input type="datetime-local" id="fecha_hora_ronda" name="fecha_hora_ronda" value="<%= bitacora.fecha_hora_ronda %>" required>
+        
+        <label for="area_sector_revisado">Área/Sector Revisado: </label>
+        <input type="text" id="area_sector_revisado" name="area_sector_revisado" value="<%= bitacora.area_sector_revisado %>" required>
+        
+        <label for="punto_control">Punto de Control (Checklist): </label>
+        <input type="text" id="punto_control" name="punto_control" value="<%= bitacora.punto_control %>" required>
+        
+        <label for="estado">Estado (OK/Fallo): </label>
+        <select id="estado" name="estado" required>
+            <option value="OK" <%= bitacora.estado === 'OK' ? 'selected' : '' %>>OK</option>
+            <option value="Fallo" <%= bitacora.estado === 'Fallo' ? 'selected' : '' %>>Fallo</option>
+        </select>
+        
+        <label for="observaciones">Observaciones: </label>
+        <textarea id="observaciones" name="observaciones" rows="3"><%= bitacora.observaciones %></textarea>
+        
+        <label for="seguimiento_requerido">Seguimiento Requerido: </label>
+        <select id="seguimiento_requerido" name="seguimiento_requerido">
+            <option value="No" <%= bitacora.seguimiento_requerido === 'No' ? 'selected' : '' %>>No</option>
+            <option value="Sí" <%= bitacora.seguimiento_requerido === 'Sí' ? 'selected' : '' %>>Sí</option>
+        </select>
+        
+        <label for="inspector_operador">Inspector/Operador: </label>
+        <input type="text" id="inspector_operador" name="inspector_operador" value="<%= bitacora.inspector_operador %>" required>
+        
+        <button type="submit">Actualizar Datos</button>
+    </form>
+</body>
+</html>
